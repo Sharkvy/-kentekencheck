@@ -45,7 +45,7 @@ To run the project locally, follow these steps:
    ```bash
    npm start
 6. **Open the frontend**  
-   Go to the index.html in your browser to interact with the RDW Kenteken Checker.
+   Go to the `index.html` in your browser to interact with the RDW Kenteken Checker.
 
 
 
