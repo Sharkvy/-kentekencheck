@@ -26,4 +26,4 @@ To run the project locally, follow these steps:
 1. **Clone the repository**  
    Open your terminal or command prompt and run:
    ```bash
-   git clone https://github.com/jouwgebruikersnaam/rdw-kenteken-checker.git
+   git clone https://github.com/Sharkvy/-kentekencheck.git
