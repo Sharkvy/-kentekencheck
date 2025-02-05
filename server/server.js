@@ -8,8 +8,8 @@ const port = 3000;
 app.use(cors());  // Dit staat CORS toe voor alle domeinen (zoals localhost:5500 voor je frontend)
 
 // Je RDW API sleutel-ID en geheim
-const KEY_ID = 'bsqtxqzm7k5zost7ubsy5jmvj';  // Vervang dit door je daadwerkelijke sleutel-ID
-const SECRET_KEY = '694vzajoa2f0dqumf0fp31fgjkfalh17mkgx8sfnmpf8a6wnr';  // Vervang dit door je daadwerkelijke sleutel-geheim
+const KEY_ID = process.env.KEY_ID;
+const SECRET_KEY = process.env.SECRET_KEY;
 
 // Route voor het ophalen van kentekeninformatie
 app.get('/check-kenteken', async (req, res) => {
