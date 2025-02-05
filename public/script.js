@@ -1,5 +1,5 @@
 function checkKenteken() {
-    const kenteken = document.getElementById('kenteken-input').value; // Haal het kenteken op uit het invoerveld
+    const kenteken = document.getElementById('kenteken-input').value;
 
     if (!kenteken) {
         alert("Voer een geldig kenteken in.");
@@ -12,9 +12,8 @@ function checkKenteken() {
             if (data.error) {
                 document.getElementById('auto-informatie').innerText = data.error;
             } else {
-                // Verwerk de data zoals teruggegeven door de RDW API
 
-                // Haal de relevante gegevens uit de API-response
+
                 const kenteken = data.kenteken || 'Onbekend';
                 const voertuigsoort = data.voertuigsoort || 'Onbekend';
                 const merk = data.merk || 'Onbekend';
@@ -42,7 +41,7 @@ function checkKenteken() {
                 const tellerstandoordeel = data.tellerstandoordeel || 'Onbekend';
                 const codeToelichtingTellerstandoordeel = data.code_toelichting_tellerstandoordeel || 'Onbekend';
 
-                // Weergeef de gegevens op de pagina
+
                 document.getElementById('auto-informatie').innerHTML = `
                     <strong>Kenteken:</strong> ${kenteken}<br>
                     <strong>Voertuigsoort:</strong> ${voertuigsoort}<br>

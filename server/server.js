@@ -5,14 +5,14 @@ const cors = require('cors');
 const app = express();
 const port = 3000;
 
-// CORS inschakelen
-app.use(cors());  // Dit staat CORS toe voor alle domeinen (zoals localhost:5500 voor je frontend)
 
-// Je RDW API sleutel-ID en geheim
+app.use(cors()); 
+
+
 const KEY_ID = process.env.KEY_ID;
 const SECRET_KEY = process.env.SECRET_KEY;
 
-// Route voor het ophalen van kentekeninformatie
+
 app.get('/check-kenteken', async (req, res) => {
     const kenteken = req.query.kenteken;
 
@@ -28,20 +28,19 @@ app.get('/check-kenteken', async (req, res) => {
                 'Authorization': 'Basic ' + Buffer.from(KEY_ID + ':' + SECRET_KEY).toString('base64'),
             },
             params: {
-                "$limit": 1,  // Beperk de resultaten tot 1
-                "kenteken": sanitizedKenteken,  // Zoek op het genormaliseerde kenteken
+                "$limit": 1,  
+                "kenteken": sanitizedKenteken,  
             }
         });
 
-        // Log de volledige response van de API
+
         console.log('API response:', response.data);
 
-        // Als er geen gegevens gevonden zijn
+
         if (response.data.length === 0) {
             return res.status(404).json({ error: 'Kenteken niet gevonden.' });
         }
 
-        // Stuur de eerste gevonden record door naar de frontend
         res.json(response.data[0]);
     } catch (error) {
         console.error('Error:', error);
@@ -49,7 +48,7 @@ app.get('/check-kenteken', async (req, res) => {
     }
 });
 
-// Start de server
+
 app.listen(port, () => {
     console.log(`Server draait op http://localhost:${port}`);
 });
