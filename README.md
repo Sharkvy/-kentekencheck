@@ -27,3 +27,25 @@ To run the project locally, follow these steps:
    Open your terminal or command prompt and run:
    ```bash
    git clone https://github.com/Sharkvy/-kentekencheck.git
+2. **Navigate into the project directory**  
+   Change to the project folder:
+   ```bash
+   cd rdw-kenteken-checker
+3. **Install dependencies**  
+   Install all the required Node.js dependencies by running:
+   ```bash
+   npm install
+4. **Set up your environment variables**  
+   Create a .env file in the root directory of the project and add your RDW API keys as follows:
+   ```bash
+   KEY_ID=your-key-id
+   SECRET_KEY=your-secret-key
+5. **Start the server**  
+   Start the server by running the following command:
+   ```bash
+   npm start
+6. **Open the frontend**  
+   Go to the index.html in your browser to interact with the RDW Kenteken Checker.
+
+
+
