@@ -20,9 +20,6 @@ app.get('/check-kenteken', async (req, res) => {
         return res.status(400).json({ error: 'Kenteken is verplicht!' });
     }
 
-    // Normaliseer het kenteken:
-    // 1. Verwijder streepjes, spaties en andere tekens
-    // 2. Zet het kenteken om naar hoofdletters
     const sanitizedKenteken = kenteken.replace(/[^A-Z0-9]/gi, '').toUpperCase();
 
     try {
