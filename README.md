@@ -24,4 +24,6 @@ The app can be viewed locally by running the server and opening `index.html` in 
 To run the project locally, follow these steps:
 
 1. **Clone the repository**  
-   ```bash git clone https://github.com/jouwgebruikersnaam/rdw-kenteken-checker.git
+   Open your terminal or command prompt and run:
+   ```bash
+   git clone https://github.com/jouwgebruikersnaam/rdw-kenteken-checker.git
