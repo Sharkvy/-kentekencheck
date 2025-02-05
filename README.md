@@ -30,7 +30,7 @@ To run the project locally, follow these steps:
 2. **Navigate into the project directory**  
    Change to the project folder:
    ```bash
-   cd rdw-kenteken-checker
+   cd -kentekencheck
 3. **Install dependencies**  
    Install all the required Node.js dependencies by running:
    ```bash
