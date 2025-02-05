@@ -1,17 +1,28 @@
-🚗 RDW Kenteken Checker
+# 🚗 RDW Kenteken Checker
 
-Dit project stelt je in staat om kentekeninformatie van voertuigen op te halen via de RDW Open Data API. Het maakt gebruik van een Express.js server en een eenvoudige frontend die interactief is.
-📋 Wat je nodig hebt
+## A simple vehicle license plate checker built with Node.js and the RDW Open Data API.
 
-  Node.js (minimaal versie 12)
-  Een teksteditor of IDE (bijvoorbeeld Visual Studio Code)
-  Je persoonlijke RDW API sleutels (krijg ze van de RDW Open Data portal)
+This project allows you to fetch vehicle information based on license plate numbers using the RDW (Rijksdienst voor het Wegverkeer) Open Data API. It's built with a **Node.js Express server** and a clean, responsive **frontend**.
 
-⚡ Installatie
+### 🔧 Technologies Used
+- 🖥️ **Node.js** – JavaScript runtime for the server
+- ⚡ **Express.js** – Web framework for creating the API server
+- 🌐 **RDW Open Data API** – For fetching vehicle data
+- 💻 **HTML, CSS, and JavaScript** – For frontend structure and design
+- 🛠️ **dotenv** – For managing environment variables (API keys)
 
-Volg deze stappen om het project lokaal in te stellen:
-1. Clone het project
+### 🚀 Features
+✅ **Real-time License Plate Lookup** – Fetch vehicle data from the RDW API  
+✅ **Responsive UI** – Works seamlessly on desktop and mobile devices  
+✅ **Simple Backend** – Fetches and displays vehicle information in a clean format  
+✅ **No API Key Exposure** – API keys securely handled through environment variables  
 
-Clone het project naar je lokale machine:
+### 📸 Preview  
+The app can be viewed locally by running the server and opening `index.html` in a browser.  
 
-git clone https://github.com/jouwgebruikersnaam/rdw-kenteken-checker.git
+### 📝 Installation  
+To run the project locally, follow these steps:
+
+1. **Clone the repository**  
+   ```bash
+  git clone https://github.com/jouwgebruikersnaam/rdw-kenteken-checker.git
