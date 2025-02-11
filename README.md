@@ -36,7 +36,7 @@ To run the project locally, follow these steps:
    ```bash
    npm install
 4. **Set up your environment variables**  
-   Create a .env file in the root directory of the project and add your RDW API keys as follows:
+   Create a .env file in the root directory of the project and add your RDW API keys as follows (remember to make your own API key at RDW):
    ```bash
    KEY_ID=your-key-id
    SECRET_KEY=your-secret-key
